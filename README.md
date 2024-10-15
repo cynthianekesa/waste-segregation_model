@@ -10,6 +10,7 @@ This project aims to explore the implementation of Machine Learning Models with 
 I used a dataset from Kaggle, available at (https://www.kaggle.com/datasets/techsash/waste-classification-data). Due to the large size of the dataset, I utilized only the images from the **test** directory for this project. This approach allowed me to reduce computational load while still being able to evaluate the model effectively.
 
 **Key Findings**
+
 In this project, various optimization techniques were employed to improve the performance of the model, focusing on regularization, optimizers, early stopping, and dropout. These techniques are crucial in training deep learning models to achieve high accuracy while preventing overfitting. Here's a detailed discussion of each technique used, along with an explanation of the parameters, how they were tuned, and their significance in this context:
 
 ### 1. **Regularization Techniques (L1 and L2)**
