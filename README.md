@@ -63,5 +63,63 @@ Dropout is another regularization technique that prevents overfitting by randoml
 
 Thus, the Configuration of **L2 regularization, Adam optimizer, early stopping, and dropout** was the best optimization strategy for this project. The parameter choices, including the learning rate, regularization strength, dropout rate, and early stopping patience, were tuned carefully through experimentation, leading to this optimal result.
 
-**ERROR ANALYSIS**
+### Error Analysis of the Two Models
+
+#### 1. **Confusion Matrix Comparison**
+
+- **Vanilla Model**:
+  - True Organic (O) correctly classified: 122
+  - True Organic misclassified as Recyclable (R): 4
+  - True Recyclable correctly classified: 150
+  - True Recyclable misclassified as Organic: 12
+
+- **Optimized Model**:
+  - True Organic (O) correctly classified: 122
+  - True Organic misclassified as Recyclable (R): 4
+  - True Recyclable correctly classified: 152
+  - True Recyclable misclassified as Organic: 10
+
+#### 2. **False Positives and False Negatives**:
+
+- **Vanilla Model**:
+  - **False Positives (FP)**: 4 (Organic predicted as Recyclable)
+  - **False Negatives (FN)**: 12 (Recyclable predicted as Organic)
+  
+- **Optimized Model**:
+  - **False Positives (FP)**: 4 (Organic predicted as Recyclable)
+  - **False Negatives (FN)**: 10 (Recyclable predicted as Organic)
+
+#### 3. **Performance Metrics**:
+
+- **Vanilla Model**:
+  - **Accuracy**: 0.9444
+  - **Precision**: 0.9740
+  - **Recall**: 0.9259
+  - **F1 Score**: 0.9494
+
+- **Optimized Model**:
+  - **Accuracy**: 0.9514
+  - **Precision**: 0.9744
+  - **Recall**: 0.9383
+  - **F1 Score**: 0.9560
+
+#### 4. **Insights from Error Analysis**:
+
+- **Accuracy Improvement**: 
+  The optimized model has a slightly better accuracy (0.9514 vs. 0.9444) due to fewer false negatives. This means the optimized model is slightly better at overall classification, particularly in distinguishing between recyclable and organic waste.
+
+- **Recall**:
+  The recall is improved in the optimized model (0.9383 vs. 0.9259), which indicates that the optimized model correctly identifies more of the recyclable waste instances. The lower false negative count (10 vs. 12) in the optimized model suggests better sensitivity for recyclable items.
+
+- **Precision**:
+  The precision remains nearly the same across both models, indicating that both models maintain a similar balance in correctly identifying positive recyclable waste without falsely classifying too many organic items as recyclable.
+
+- **F1 Score**:
+  The optimized model shows an improved F1 score (0.9560 vs. 0.9494). Since the F1 score balances precision and recall, this suggests that the optimized model achieves a more favorable trade-off between the two, making it slightly more reliable for general predictions.
+
+#### 5. **Error Reduction**:
+  - The primary improvement comes in reducing the false negatives (from 12 to 10). This slight reduction has contributed to better recall, accuracy, and F1 score in the optimized model. It demonstrates that while both models perform well, the optimization technique led to marginal gains in predictive power.
+
+### Conclusion:
+The optimized model performs better overall, particularly in terms of recall and F1 score. The reduction in false negatives for recyclable waste is the key improvement, making the optimized model more effective in distinguishing between organic and recyclable categories. While both models have a similar precision, the optimized model’s performance is superior due to its better handling of misclassifications, particularly for recyclable items.
 
