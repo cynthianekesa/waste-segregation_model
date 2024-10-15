@@ -5,6 +5,8 @@ A waste segregation model for 3.1 trisemester at ALU
 
 This project aims to explore the implementation of Machine Learning Models with regularization, optimization, and Error analysis techniques used in machine learning to improve models' performance, convergence speed, and efficiency.
 
+Proposal-https://docs.google.com/document/d/1mllo1xHEKW1wgZ1Ljzlb3vRbL5FwwkqUPO7nLZ2a8KA/edit?usp=sharing
+
 **Dataset Used**
 
 I used a dataset from Kaggle, available at (https://www.kaggle.com/datasets/techsash/waste-classification-data). Due to the large size of the dataset, I utilized only the images from the **test** directory for this project. This approach allowed me to reduce computational load while still being able to evaluate the model effectively.
