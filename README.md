@@ -6,6 +6,7 @@ A waste segregation model for 3.1 trisemester at ALU
 This project aims to explore the implementation of Machine Learning Models with regularization, optimization, and Error analysis techniques used in machine learning to improve models' performance, convergence speed, and efficiency.
 
 **Dataset Used**
+
 I used a dataset from Kaggle, available at (https://www.kaggle.com/datasets/techsash/waste-classification-data). Due to the large size of the dataset, I utilized only the images from the **test** directory for this project. This approach allowed me to reduce computational load while still being able to evaluate the model effectively.
 
 **Key Findings**
@@ -61,3 +62,6 @@ Dropout is another regularization technique that prevents overfitting by randoml
 - **Configuration 4 (L2 + Adam + Early Stopping + Dropout)**: This Configuration resulted in the best performance, with 96.17% accuracy and the lowest loss of 0.1032. The synergy between Adam and L2 regularization, along with early stopping and dropout, led to the most effective model.
 
 Thus, the Configuration of **L2 regularization, Adam optimizer, early stopping, and dropout** was the best optimization strategy for this project. The parameter choices, including the learning rate, regularization strength, dropout rate, and early stopping patience, were tuned carefully through experimentation, leading to this optimal result.
+
+**ERROR ANALYSIS**
+
