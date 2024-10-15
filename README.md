@@ -2,15 +2,15 @@
 
 **Project Overview**
 
-This project aims to explore the implementation of Machine Learning Models with regularization, optimization, and Error analysis techniques used in machine learning to improve models' performance, convergence speed, and efficiency.
+This project aims to explore the implementation of Machine Learning Models with regularization, optimization, and Error analysis techniques used in machine learning to improve models' performance, convergence speed, and efficiency. The data used is aimed at enhancing waste segregation at the source by building a model from an image classification dataset containing two classes, Organic and Recyclable.
 
-Proposal-https://docs.google.com/document/d/1mllo1xHEKW1wgZ1Ljzlb3vRbL5FwwkqUPO7nLZ2a8KA/edit?usp=sharing
+Project Proposal-https://docs.google.com/document/d/1mllo1xHEKW1wgZ1Ljzlb3vRbL5FwwkqUPO7nLZ2a8KA/edit?usp=sharing
 
 **Dataset Used**
 
 I used a dataset from Kaggle, available at (https://www.kaggle.com/datasets/techsash/waste-classification-data). Due to the large size of the dataset, I utilized only the images from the **test** directory for this project. This approach allowed me to reduce computational load while still being able to evaluate the model effectively.
 
-**Key Findings**
+# Key Findings
 
 In this project, various optimization techniques were employed to improve the performance of the model, focusing on regularization, optimizers, early stopping, and dropout. These techniques are crucial in training deep learning models to achieve high accuracy while preventing overfitting. Here's a detailed discussion of each technique used, along with an explanation of the parameters, how they were tuned, and their significance in this context:
 
